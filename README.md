@@ -2,19 +2,18 @@
 
 <img src="https://raw.githubusercontent.com/Devopstrio/.github/main/assets/Browser_logo.png" height="150" alt="Legacy Modernization Assessment Logo" />
 
-<h1>Legacy Modernization Assessment Platform</h1>
+<h1>Legacy Modernization Assessment</h1>
 
-<p><strong>The Institutional-Grade Platform for Portfolio Discovery, Cloud Readiness Scoring, and Strategic Transformation Planning</strong></p>
+<p><strong>The Institutional-Grade Platform for Portfolio Discovery, Cloud Readiness Scoring, and Strategic Transformation Planning.</strong></p>
 
-[![Standard: Enterprise--Modernization](https://img.shields.io/badge/Standard-Enterprise--Modernization-blue.svg?style=for-the-badge&labelColor=000000)]()
-[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-indigo.svg?style=for-the-badge&labelColor=000000)]()
-[![Framework: 6R--Modernization](https://img.shields.io/badge/Framework-6R--Modernization-blue.svg?style=for-the-badge&labelColor=000000)]()
-[![Strategy: Cloud--First](https://img.shields.io/badge/Strategy-Cloud--First-gold.svg?style=for-the-badge&labelColor=000000)]()
+[![Standard: Transformation-Excellence](https://img.shields.io/badge/Standard-Transformation--Excellence-blue.svg?style=for-the-badge&labelColor=000000)]()
+[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=for-the-badge&labelColor=000000)]()
+[![Focus: Portfolio--Modernization](https://img.shields.io/badge/Focus-Portfolio--Modernization-gold.svg?style=for-the-badge&labelColor=000000)]()
 
 <br/>
 
 > **"Modernization is not a project, it's an institutional capability."** 
-> Legacy Modernization Assessment is a flagship solution for Enterprise Architects and Transformation Leaders. By orchestrating portfolio-wide discovery, multi-dimensional readiness scoring, and automated migration wave planning, it enables organizations to move from fragile legacy systems to agile, cloud-native architectures with precision and data-driven confidence.
+> **Legacy Modernization Assessment** is an enterprise-grade platform designed to provide a secure, measurable, and highly automated foundation for global transformation operations. It orchestrates the complex lifecycle of legacy modernization—from portfolio-wide discovery and automated debt analysis to 6R/7R strategy selection and unified transformation governance.
 
 </div>
 
@@ -22,622 +21,263 @@
 
 ## 🏛️ Executive Summary
 
-The **Legacy Modernization Assessment Platform** is a specialized flagship solution designed for CTOs, CIOs, and Enterprise Transformation Offices. As institutional technical debt reaches critical levels, organizations struggle to prioritize modernization efforts across thousands of applications. This platform addresses the complexity of assessing legacy estates—applications, infrastructure, and data—using a standardized, automated framework.
+Fragmented legacy portfolios and manual modernization assessments are strategic operational liabilities; lack of centralized transformation orchestration is a primary barrier to organizational cloud scaling. Organizations fail to achieve rapid modernization not because of a lack of talent, but because of fragmented assessment standards, lack of automated debt analysis, and an inability to orchestrate transformation waves with operational precision.
 
-This platform provides a **Unified Transformation Intelligence Plane**. It demonstrates how to orchestrate institutional modernization—using **FastAPI**, **React 18**, and **6R/7R Frameworks**—to create a "Modernization-First" culture. By providing **Portfolio Discovery**, **Debt-to-Value Analysis**, and **Automated Roadmap Generation**, it enables organizations to move from "Legacy Paralysis" to "Modernization Velocity."
-
----
-
-## 📉 The "Legacy Paralysis" Problem
-
-Enterprises scaling legacy modernization face existential challenges:
-- **Opaque Dependencies**: Fragmented visibility into application and infrastructure interconnectivity, leading to "Migration Fragility" and unexpected outages.
-- **Subjective Prioritization**: Lack of a standardized, data-driven scoring model to classify systems (Rehost vs. Refactor vs. Retire), resulting in inefficient resource allocation.
-- **Technical Debt Gravity**: Decades of accumulated debt that obscures business value and prevents the adoption of modern, cloud-native patterns.
-- **Wave Planning Complexity**: Difficulty orchestrating large-scale migration waves that account for business impact, risk, and resource constraints.
+This platform provides the **Transformation Intelligence Plane**. It implements a complete **Enterprise Assessment-as-Code Framework**, enabling Portfolio and Engineering teams to manage global modernization efforts as first-class citizens. By automating the identification of technical debt hotspots and orchestrating real-time 6R/7R strategy selection, we ensure that every organizational asset—from legacy COBOL mainframes to monolithic Java applications—is assessed by default, audited for history, and strictly aligned with institutional modernization frameworks.
 
 ---
 
-## 🚀 Strategic Drivers & Business Outcomes
+## 📐 Architecture Storytelling: Principal Reference Models
 
-### 🎯 Strategic Drivers
-- **Cloud-Native Acceleration**: Transitioning from monolithic architectures to microservices, containers, and serverless environments.
-- **6R/7R Strategy Execution**: Codifying the modernization decision framework to ensure every application follows the optimal path to value.
-- **Risk-Based Prioritization**: Ranking transformation efforts based on technical debt criticality and business impact scores.
+### 1. Principal Architecture: Global Legacy Modernization & Transformation Intelligence Plane
+This diagram illustrates the end-to-end flow from multi-source discovery and debt analysis to 6R/7R strategy selection, risk-based wave planning, and institutional transformation auditing.
 
-### 💰 Business Outcomes
-- **40% Reduction in Migration Risk**: Using automated dependency mapping to prevent cross-app outages during transformation.
-- **Accelerated ROI**: Identifying "Low-Hanging Fruit" (Quick Wins) and "Retire-able" systems to fund larger modernization efforts.
-- **Institutional Agility**: Building a continuous assessment capability that evolves with the enterprise modernization strategy.
+```mermaid
+graph LR
+    %% Subgraph Definitions
+    subgraph PortfolioDiscovery["Multi-Source Discovery Ingress"]
+        direction TB
+        CMDBScan["CMDB & Inventory Scan"]
+        TrafficAnalysis["Network Traffic Analysis"]
+        CodeScan["Technical Debt Code Scan"]
+    end
+
+    subgraph IntelligenceEngine["Transformation Intelligence Hub"]
+        direction TB
+        API["FastAPI Assessment Gateway"]
+        DebtAnalyzer["Technical Debt & Complexity Engine"]
+        StrategyEngine["6R/7R Path Selection Engine"]
+        WaveOrch["Migration Wave Orchestrator"]
+    end
+
+    subgraph AnalysisPlane["Distributed Analysis Fleet"]
+        direction TB
+        ScanningWorkers["Code & Infra Scan Workers"]
+        DependencyMap["Dependency Graph Generator"]
+        EffortEstimator["Risk & Effort Estimator"]
+    end
+
+    subgraph OperationsHub["Institutional Transformation Hub"]
+        direction TB
+        Scorecard["Modernization Maturity Score"]
+        Analytics["Debt & Readiness Stats"]
+        Audit["Forensic Assessment Metadata Lake"]
+    end
+
+    subgraph DevOps["Assessment-as-Code Orchestration"]
+        direction TB
+        TF["Terraform Assessment Modules"]
+        RoadmapBot["Automated Roadmap Generator"]
+        ChatOps["Strategy Approval Hub"]
+    end
+
+    %% Flow Arrows
+    PortfolioDiscovery -->|1. Submit Discovery Data| API
+    API -->|2. Analyze Debt| DebtAnalyzer
+    DebtAnalyzer -->|3. Select Modernization Path| StrategyEngine
+    StrategyEngine -->|4. Orchestrate Waves| WaveOrch
+    
+    WaveOrch -->|5. Execute Analysis| AnalysisPlane
+    AnalysisPlane -->|6. Notify Roadmap| ChatOps
+    API -->|7. Visualize Readiness| Scorecard
+    
+    Scorecard -->|8. Track Debt| Analytics
+    Scorecard -->|9. Record Strategy| Audit
+    
+    TF -->|10. Provision Hub| IntelligenceEngine
+    RoadmapBot -->|11. Inject Plan| WaveOrch
+    Audit -->|12. Improve Scoring| StrategyEngine
+
+    %% Styling
+    classDef ingress fill:#f5f5f5,stroke:#616161,stroke-width:2px;
+    classDef intel fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+    classDef analysis fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ops fill:#ede7f6,stroke:#311b92,stroke-width:2px;
+    classDef devops fill:#fffde7,stroke:#f57f17,stroke-width:2px;
+
+    class PortfolioDiscovery ingress;
+    class IntelligenceEngine intel;
+    class AnalysisPlane analysis;
+    class OperationsHub ops;
+    class DevOps devops;
+```
+
+### 2. The Modernization Assessment Lifecycle Flow
+The continuous path of a legacy application from initial discovery and cataloging to active 6R/7R analysis, prioritization, planning, and institutional forensic auditing.
+
+```mermaid
+graph LR
+    Discover["Discover Asset"] --> Catalog["Catalog & Map"]
+    Catalog --> Analyze["6R/7R Analysis"]
+    Analyze --> Plan["Prioritize & Plan"]
+    Plan --> Audit["Forensic Audit"]
+```
+
+### 3. Application Complexity & Technical Debt Topology
+Strategically visualizing technical debt hotspots across the legacy portfolio, providing a unified institutional view of which systems are most critical for immediate modernization vs. decommissioning.
+
+```mermaid
+graph LR
+    Model["Unified Debt Model"] -->|Analyze| Hotspots["Debt Hotspots (Critical)"]
+    Model -->|Analyze| Maintenance["High Maintenance (Warning)"]
+    Hotspots --- Action["Immediate Refactor/Retire"]
+```
+
+### 4. Modernization Path Selection Flow
+Executing complex logic for choosing the optimal modernization path (Rehost, Replatform, Refactor, Retire, or Repurchase) based on technical readiness, business value, and transformation risk.
+
+```mermaid
+graph TD
+    App["Target Application"] --> Val{Business Value?}
+    Val -->|Low| Debt{Technical Debt?}
+    Val -->|High| Debt
+    Debt -->|High| Refactor["PATH: Refactor / Modernize"]
+    Debt -->|Low| Rehost["PATH: Rehost / Lift & Shift"]
+    Refactor --- Estimate["Effort & Risk Score"]
+```
+
+### 5. Distributed Dependency Discovery & Mapping Flow
+Identifying hidden and undocumented connections between legacy mainframes and modern distributed applications, preventing "Modernization Fragility" during transformation.
+
+```mermaid
+graph LR
+    Mainframe["Legacy Mainframe"] -->|Traffic Scan| Bridge["Integration Bridge"]
+    Bridge -->|Dependency| App["Modern Web App"]
+    App --- Graph["Portfolio Dependency Map"]
+```
+
+### 6. Risk & Effort Estimation Modeling Flow
+Calculating the total cost, time, and human resource effort required for a specific modernization path, enabling organizations to build data-driven transformation budgets and timelines.
+
+```mermaid
+graph LR
+    Complexity["App Complexity Score"] --> Model["Effort Estimation Model"]
+    Team["Team Velocity"] --> Model
+    Model -->|Output| Forecast["Projected Days & Cost"]
+    Forecast --- Budget["Transformation Budget Hub"]
+```
+
+### 7. Institutional Modernization Maturity Scorecard
+Grading organizational performance based on key indicators: Portfolio Readiness Score, Debt Reduction Rate, and Modernization Wave Speed.
+
+```mermaid
+graph TD
+    Post["Modernization Health: 93%"] --> Risk["Debt Gap: 7%"]
+    Post --- C1["Readiness Score (95%)"]
+    Post --- C2["Wave Velocity (Apps/Month)"]
+```
+
+### 8. Identity & RBAC for Assessment Governance
+Managing fine-grained access to sensitive application scores, debt audits, and modernization roadmaps between Portfolio Strategists, Architects, and App Owners.
+
+```mermaid
+graph TD
+    Strat["Portfolio Strategist"] --> Hub["Observe Global Roadmap"]
+    Arch["Solution Architect"] --> Assess["Execute Detailed Assessment"]
+    Owner["Application Owner"] --> Audit["Verify Debt Scores"]
+```
+
+### 9. IaC Deployment: Assessment-as-Code Framework
+Using modular Terraform to deploy and manage the versioned distribution of the assessment tracking hubs, scanning workers, and forensic metadata lakes.
+
+```mermaid
+graph LR
+    HCL["Infrastructure Code"] --> TF["Terraform Apply"]
+    TF --> Engine["Assessment Control Plane"]
+    Engine --> Clusters["HA Scanning Fleet"]
+```
+
+### 10. AIOps Modernization Drift & Alignment Validation Flow
+Using advanced analytics to identify assets that have deviated from their modernization roadmap or where new technical debt is accumulating faster than planned.
+
+```mermaid
+graph LR
+    Roadmap["Modernization Plan"] --> Analyzer["Alignment Validation Bot"]
+    Analyzer -->|Drift| Alert["Roadmap Deviation Alert"]
+    Analyzer -->|Normal| Pass["Status Aligned"]
+```
+
+### 11. Metadata Lake for Forensic Assessment Audit
+Storing long-term records of every application score, every strategy choice, and every risk assessment for institutional record-keeping and compliance auditing.
+
+```mermaid
+graph LR
+    App["Application Entity"] --> Stream["Forensic Stream"]
+    Stream --> Lake["Assessment Metadata Lake"]
+    Lake --> Trends["Debt Reduction Trends"]
+```
 
 ---
 
-## 📐 Architecture Storytelling: 80+ Advanced Diagrams
-
-### 1. Executive Modernization Architecture
-*The orchestration of Discovery, Assessment, and Recommendation.*
-```mermaid
-graph TD
-    subgraph "Modernization Platform"
-        Portal[Transformation Hub]
-        Discovery[Discovery Engine]
-        Assessment[Assessment Engine]
-        Recommendation[Recommendation Engine]
-        Analytics[Analytics Engine]
-    end
-
-    subgraph "Legacy Portfolio"
-        App[Legacy Applications]
-        DB[Legacy Databases]
-        Infra[On-Prem Infrastructure]
-    end
-
-    subgraph "Cloud Destination"
-        Cloud[AWS / Azure / GCP]
-        K8s[Kubernetes / Serverless]
-    end
-
-    Portal --> Discovery
-    Discovery --> App
-    Discovery --> Infra
-    Assessment --> Discovery
-    Recommendation --> Assessment
-    Recommendation --> Cloud
-    Analytics --> Portal
-```
-
-### 2. The Portfolio Discovery Lifecycle
-*From raw scan to mapped application topology.*
-```mermaid
-sequenceDiagram
-    participant Scan as Discovery Agent
-    participant CMDB as CMDB / Monitoring
-    participant Engine as Discovery Engine
-    participant DB as Portfolio Ledger
-    participant UI as Transformation Hub
-
-    Scan->>CMDB: Query Infrastructure Inventory
-    CMDB-->>Scan: Raw Server & Service Data
-    Scan->>Engine: Push Discovery Data
-    Engine->>Engine: Map Dependencies & Traffic Flows
-    Engine->>Engine: Group Into Application Clusters
-    Engine->>DB: Persist Portfolio Map
-    DB-->>UI: Real-time Portfolio View
-```
-
-### 3. Cloud Readiness Scoring Model
-*Multi-vector analysis of application readiness.*
-```mermaid
-graph TD
-    Score[Readiness Score]
-    Score --> Infra[Infrastructure Vector]
-    Score --> Data[Data Vector]
-    Score --> App[Application Architecture]
-    Score --> Sec[Security & Compliance]
-    Note right of Score: Standardized % Index
-```
-
-### 4. 6R Classification Logic
-```mermaid
-graph LR
-    Input[App Assessment] --> Logic{6R Decision Engine}
-    Logic -->|High Debt / Low Value| Retire[RETIRE]
-    Logic -->|Low Debt / High Value| Rehost[REHOST]
-    Logic -->|Medium Debt / High Value| Refactor[REFACTOR]
-    Logic -->|High Debt / High Value| Replatform[REPLATFORM]
-```
-
-### 5. Dependency Complexity Visualization
-```mermaid
-graph TD
-    A[Core App] --> B[Oracle DB]
-    A --> C[Message Queue]
-    A --> D[Legacy Auth]
-    B --> E[Reporting Service]
-    Note right of A: High Complexity Hub Detected
-```
-
-### 6. Technical Debt vs. Business Value Heatmap
-```mermaid
-graph LR
-    Value[Business Value] -->|Y-Axis| Grid[Heatmap]
-    Debt[Technical Debt] -->|X-Axis| Grid
-    Grid -->|Top Right| Focus[Strategic Modernization]
-    Grid -->|Bottom Left| Cut[Retire / Decommission]
-```
-
-### 7. Modernization Wave Planning Flow
-```mermaid
-graph LR
-    Apps[Portfolio] --> Triage[Strategic Triage]
-    Triage --> Wave1[Wave 1: Foundation]
-    Wave1 --> Wave2[Wave 2: Core Transformation]
-    Wave2 --> Wave3[Wave 3: Optimization]
-```
-
-### 8. Migration Effort Estimation Model
-```mermaid
-graph LR
-    Factor1[Lines of Code] --> Effort[Migration Effort Index]
-    Factor2[Dependency Count] --> Effort
-    Factor3[Data Volume] --> Effort
-    Effort --> Days[Est. Person-Days]
-```
-
-### 9. Business Impact Analysis (BIA) Loop
-```mermaid
-graph TD
-    Downtime[Downtime Tolerance] --> Risk[Risk Profile]
-    Revenue[Revenue Dependency] --> Risk
-    Regulatory[Compliance Tier] --> Risk
-    Risk --> Plan[Transformation Guardrails]
-```
-
-### 10. Modernization ROI Calculation
-```mermaid
-graph LR
-    Legacy[OpEx: Legacy Run Cost] --> Diff[Cost Differential]
-    Target[OpEx: Cloud Run Cost] --> Diff
-    Diff --> ROI[Payback Period]
-```
-
-### 11. Application discovery flow
-```mermaid
-graph LR
-    A[App] --> D[Disc]
-```
-
-### 12. Portfolio discovery flow
-```mermaid
-graph LR
-    P[Port] --> D[Disc]
-```
-
-### 13. Infrastructure mapping flow
-```mermaid
-graph LR
-    I[Infra] --> M[Map]
-```
-
-### 14. Dependency mapping flow
-```mermaid
-graph LR
-    D[Dep] --> M[Map]
-```
-
-### 15. Legacy inventory flow
-```mermaid
-graph LR
-    L[Leg] --> I[Inv]
-```
-
-### 16. Technical debt assessment
-```mermaid
-graph LR
-    T[Tech] --> A[Assess]
-```
-
-### 17. Application classification flow
-```mermaid
-graph LR
-    A[App] --> C[Class]
-```
-
-### 18. Cloud readiness scoring
-```mermaid
-graph LR
-    C[Cloud] --> S[Score]
-```
-
-### 19. Security posture assessment
-```mermaid
-graph LR
-    S[Sec] --> A[Assess]
-```
-
-### 20. Compliance gap analysis
-```mermaid
-graph LR
-    C[Comp] --> A[Analy]
-```
-
-### 21. Cost analysis flow
-```mermaid
-graph LR
-    C[Cost] --> A[Analy]
-```
-
-### 22. Performance benchmarking flow
-```mermaid
-graph LR
-    P[Perf] --> B[Bench]
-```
-
-### 23. Data modernization assessment
-```mermaid
-graph LR
-    D[Data] --> A[Assess]
-```
-
-### 24. API readiness evaluation
-```mermaid
-graph LR
-    A[API] --> E[Eval]
-```
-
-### 25. Containerization readiness flow
-```mermaid
-graph LR
-    C[Cont] --> R[Read]
-```
-
-### 26. Decomposition recommendations
-```mermaid
-graph LR
-    D[Deco] --> R[Rec]
-```
-
-### 27. Architecture readiness flow
-```mermaid
-graph LR
-    A[Arch] --> R[Read]
-```
-
-### 28. Risk scoring flow
-```mermaid
-graph LR
-    R[Risk] --> S[Score]
-```
-
-### 29. Prioritization logic flow
-```mermaid
-graph LR
-    P[Prior] --> L[Logic]
-```
-
-### 30. Roadmap generation flow
-```mermaid
-graph LR
-    R[Road] --> G[Gen]
-```
-
-### 31. Business impact analysis
-```mermaid
-graph LR
-    B[Bus] --> I[Imp]
-```
-
-### 32. Migration wave planning
-```mermaid
-graph LR
-    M[Mig] --> W[Wave]
-```
-
-### 33. Executive reporting flow
-```mermaid
-graph LR
-    E[Exec] --> R[Rep]
-```
-
-### 34. Discovery engine pipeline
-```mermaid
-graph LR
-    D[Disc] --> E[Eng]
-```
-
-### 35. Assessment engine flow
-```mermaid
-graph LR
-    A[Assess] --> E[Eng]
-```
-
-### 36. Recommendation engine flow
-```mermaid
-graph LR
-    R[Rec] --> E[Eng]
-```
-
-### 37. Analytics engine flow
-```mermaid
-graph LR
-    A[Analy] --> E[Eng]
-```
-
-### 38. AWS integration flow
-```mermaid
-graph LR
-    A[AWS] --> I[Int]
-```
-
-### 39. Azure integration flow
-```mermaid
-graph LR
-    A[Azure] --> I[Int]
-```
-
-### 40. GCP integration flow
-```mermaid
-graph LR
-    G[GCP] --> I[Int]
-```
-
-### 41. CMDB integration flow
-```mermaid
-graph LR
-    C[CMDB] --> I[Int]
-```
-
-### 42. Monitoring integration flow
-```mermaid
-graph LR
-    M[Mon] --> I[Int]
-```
-
-### 43. CI/CD integration flow
-```mermaid
-graph LR
-    C[CICD] --> I[Int]
-```
-
-### 44. Infrastructure: Network
-```mermaid
-graph LR
-    I[Infra] --> N[Net]
-```
-
-### 45. Infrastructure: Compute
-```mermaid
-graph LR
-    I[Infra] --> C[Comp]
-```
-
-### 46. Monitoring: Prometheus
-```mermaid
-graph LR
-    M[Mon] --> P[Prom]
-```
-
-### 47. Monitoring: Grafana
-```mermaid
-graph LR
-    M[Mon] --> G[Graf]
-```
-
-### 48. Monitoring: Alerts
-```mermaid
-graph LR
-    M[Mon] --> A[Alert]
-```
-
-### 49. CI/CD: Build pipeline
-```mermaid
-graph LR
-    C[CICD] --> B[Build]
-```
-
-### 50. CI/CD: Test pipeline
-```mermaid
-graph LR
-    C[CICD] --> T[Test]
-```
-
-### 51. CI/CD: Deploy pipeline
-```mermaid
-graph LR
-    C[CICD] --> D[Deploy]
-```
-
-### 52. Assessment UI: Dashboard
-```mermaid
-graph LR
-    U[UI] --> D[Dash]
-```
-
-### 53. Assessment UI: Portfolio
-```mermaid
-graph LR
-    U[UI] --> P[Port]
-```
-
-### 54. Assessment UI: Risk
-```mermaid
-graph LR
-    U[UI] --> R[Risk]
-```
-
-### 55. Assessment UI: Roadmap
-```mermaid
-graph LR
-    U[UI] --> R[Road]
-```
-
-### 56. API: App list
-```mermaid
-graph LR
-    A[API] --> A[App]
-```
-
-### 57. API: Discovery run
-```mermaid
-graph LR
-    A[API] --> D[Disc]
-```
-
-### 58. API: Assessment result
-```mermaid
-graph LR
-    A[API] --> A[Ass]
-```
-
-### 59. API: Roadmap fetch
-```mermaid
-graph LR
-    A[API] --> R[Road]
-```
-
-### 60. Worker: Discovery
-```mermaid
-graph LR
-    W[Worker] --> D[Disc]
-```
-
-### 61. Worker: Assessment
-```mermaid
-graph LR
-    W[Worker] --> A[Ass]
-```
-
-### 62. Worker: Recommendation
-```mermaid
-graph LR
-    W[Worker] --> R[Rec]
-```
-
-### 63. Worker: Analytics
-```mermaid
-graph LR
-    W[Worker] --> A[Analy]
-```
-
-### 64. 6R framework flow
-```mermaid
-graph LR
-    R[6R] --> F[Frame]
-```
-
-### 65. 7R framework flow
-```mermaid
-graph LR
-    R[7R] --> F[Frame]
-```
-
-### 66. Technical debt index
-```mermaid
-graph LR
-    T[Tech] --> D[Debt]
-```
-
-### 67. Business value index
-```mermaid
-graph LR
-    B[Bus] --> V[Value]
-```
-
-### 68. Migration effort index
-```mermaid
-graph LR
-    M[Mig] --> E[Effort]
-```
-
-### 69. Cost saving index
-```mermaid
-graph LR
-    C[Cost] --> S[Sav]
-```
-
-### 70. Modernization roadmap flow
-```mermaid
-graph LR
-    M[Modern] --> R[Road]
-```
-
-### 71. Portfolio visualization flow
-```mermaid
-graph LR
-    P[Port] --> V[Vis]
-```
-
-### 72. Risk heatmap flow
-```mermaid
-graph LR
-    R[Risk] --> H[Heat]
-```
-
-### 73. Cost analysis flow
-```mermaid
-graph LR
-    C[Cost] --> A[Analy]
-```
-
-### 74. Transformation lifecycle
-```mermaid
-graph LR
-    T[Trans] --> L[Life]
-```
-
-### 75. Value realization model
-```mermaid
-graph LR
-    V[Val] --> R[Real]
-```
-
-### 76. Institutional maturity index
-```mermaid
-graph LR
-    I[Inst] --> M[Matur]
-```
-
-### 77. Evidence collection flow
-```mermaid
-graph LR
-    E[Evidence] --> C[Collect]
-```
-
-### 78. Compliance audit trail
-```mermaid
-graph LR
-    C[Comp] --> A[Audit]
-```
-
-### 79. Strategy execution loop
-```mermaid
-graph LR
-    S[Strat] --> E[Exec]
-```
-
-### 80. Modernization ecosystem
-```mermaid
-graph LR
-    M[Mod] --> E[Eco]
-```
+## 🏛️ Core Modernization Pillars
+
+1.  **Unified Portfolio Discovery**: Maximizing visibility by mapping every legacy asset and its dependencies.
+2.  **Deterministic Debt Analysis**: Eliminating subjectivity through automated technical debt and complexity scoring.
+3.  **Data-Driven Path Selection**: Optimizing transformation ROI by selecting the optimal 6R/7R modernization path.
+4.  **Risk-Aware Wave Planning**: Minimizing transformation outages through dependency-aware scheduling and effort estimation.
+5.  **Autonomous Roadmap Validation**: Identifying and alerting on roadmap drift and new debt accumulation.
+6.  **Full Assessment Auditability**: Immutable recording of every modernization decision and score for institutional forensics.
 
 ---
 
 ## 🛠️ Technical Stack & Implementation
 
-### Discovery & Assessment Engine
-- **Processing**: Python 3.11+ / FastAPI / Pandas
-- **Logic**: 6R Classification Decision Trees, Cloud Readiness Scoring Models.
-- **Backend**: PostgreSQL (Portfolio Ledger), Redis (Assessment Queue).
+### Assessment Engine & APIs
+*   **Framework**: Python 3.11+ / FastAPI.
+*   **Analysis Hub**: High-performance transformation simulation using Pandas, NumPy, and Scikit-learn.
+*   **Logic Core**: Implementation of 6R/7R Decision Trees and Technical Debt Indexing algorithms.
+*   **Persistence**: PostgreSQL (Portfolio Ledger) and Redis (Assessment Cache).
+*   **Auth Orchestrator**: Federated OIDC/SAML for least-privilege assessment data access.
 
-### Frontend (Transformation Intelligence)
-- **Framework**: React 18 / Vite
-- **Visuals**: Recharts (Readiness Vectors, Strategy Pie Charts, Debt Heatmaps).
-- **Theme**: Slate, Blue, and Gold (Institutional Enterprise Aesthetics).
+### Transformation Dashboard (UI)
+*   **Framework**: React 18 / Vite.
+*   **Theme**: Dark, Slate, Blue (Modern high-fidelity enterprise aesthetic).
+*   **Visualization**: Recharts for readiness vectors, strategy pie charts, and technical debt heatmaps.
 
-### Infrastructure
-- **Cloud**: AWS EKS (Runtime), RDS (Persistence).
-- **IaC**: Terraform (VPC, K8s, Database, IAM).
+### Infrastructure & DevOps
+*   **Runtime**: AWS EKS or Azure Kubernetes Service (AKS).
+*   **Data Ingestion**: Multi-source ingestion from CMDB (PostgreSQL), Code Scanning (SonarQube/Checkmarx), and Traffic Analysis (VPC Flow Logs).
+*   **IaC**: Modular Terraform for deploying the assessment hub and scanning fleet.
+
+---
+
+## 🏗️ IaC Mapping (Module Structure)
+
+| Module | Purpose | Real Services |
+| :--- | :--- | :--- |
+| **`infrastructure/assess_hub`** | Central management plane | EKS, PostgreSQL, Redis |
+| **`infrastructure/scanners`** | Code & Infra scan fleet | SonarQube, Python Workers |
+| **`infrastructure/discovery`** | Portfolio discovery engine | VPC Flow Logs, CMDB Sync |
+| **`infrastructure/auditing`** | Forensic assessment sinks | S3, Athena, Quicksight |
 
 ---
 
 ## 🚀 Deployment Guide
 
-### Local Development
+### Local Principal Environment
 ```bash
-# Clone the repository
+# Clone the assessment platform
 git clone https://github.com/devopstrio/legacy-modernization-assessment.git
 cd legacy-modernization-assessment
 
-# Setup environment
+# Configure environment
 cp .env.example .env
 
-# Launch services
-make up
+# Launch the Assessment stack
+make init
+
+# Trigger a mock portfolio discovery and 6R modernization analysis
+make simulate-assessment
 ```
+
 Access the Transformation Hub at `http://localhost:3000`.
 
 ---
 
 ## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+<div align="center">
+  <p>© 2026 Devopstrio. All rights reserved.</p>
+</div>
